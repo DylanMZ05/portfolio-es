@@ -1,0 +1,203 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+}
+
+/* RESET */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* RESET ENDS */
+
+
+/* COLORES */
+
+:root {
+    --negro: #0c0c0c;
+    --gris: #131313;
+    --blanco: #ffffff;
+    --rojo-1: #660000;
+    --rojo-2: #A90000;
+}
+
+
+
+/* STYLES */
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--negro);
+}
+
+/* HEADER 1 */
+
+/* header {
+
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    background: linear-gradient(180deg, rgba(36,36,36,1) 0%, rgba(17,17,17,1) 100%);
+    
+    box-shadow: -10px 0px 5px #000000;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100vw;
+}
+
+.header-container div {
+    display: flex;
+}
+
+.header-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 15px 0;
+
+    width: 25vw;
+    height: 50px;
+    flex: none;
+    transition: transform 0.3s ease, background 0.2s ease;
+    overflow: hidden;
+}
+
+.header-container a:hover {
+    transform: scale(1.05);
+    background-color: #660000;
+    border-radius: 8px 8px 0 0;
+}
+
+.header-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color: var(--blanco);
+    text-decoration: none;
+
+    font-weight: 300;
+}
+
+.header-container i {
+    color: var(--blanco);
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+@media (max-width: 400px) {
+    .header-container p {
+        display: none;
+    }
+
+    .header-container a:hover {
+        border-radius: 4px 4px 0 0;
+    }
+} */
+
+
+/* HEADER 2 */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100vw;
+    background-color: var(--gris);
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.header-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 15px 25px;
+    width: 25%;
+
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 500;
+    
+    transition: transform 0.3s ease, background 0.2s ease;
+    overflow: hidden;
+
+}
+
+.header-container a:hover {
+    transform: scale(1.05);
+    background-color: #660000;
+    border-radius: 0 0 8px 8px;
+}
+
+.header-container a > i {
+    margin: 2px 7px 0 0;
+}
