@@ -1,7 +1,20 @@
+/* FONTS */
+
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
-        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-family: 'Montserrat';
+    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* COLORES */
+
+:root {
+    --negro: #0c0c0c;
+    --gris: #131313;
+    --blanco: #ffffff;
+    --rojo-1: #8a0000;
+    --rojo-2: #A90000;
 }
 
 /* RESET */
@@ -55,25 +68,10 @@ table {
     border-spacing: 0;
 }
 
-/* RESET ENDS */
-
-
-/* COLORES */
-
-:root {
-    --negro: #0c0c0c;
-    --gris: #131313;
-    --blanco: #ffffff;
-    --rojo-1: #660000;
-    --rojo-2: #A90000;
-}
-
-
-
 /* STYLES */
 
 body, html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat';
     background-color: var(--negro);
 }
 
@@ -187,17 +185,169 @@ header {
     color: var(--blanco);
     font-weight: 500;
     
-    transition: transform 0.3s ease, background 0.2s ease;
+    transition: transform 0.2s ease, background 0.15s ease;
     overflow: hidden;
-
+    border-radius: 0 0 8px 8px;
 }
 
 .header-container a:hover {
-    transform: scale(1.05);
-    background-color: #660000;
+    transform: scale(1.10);
+    background-color: var(--rojo-2);
     border-radius: 0 0 8px 8px;
+
+    font-weight: 600;
+}
+
+.header-container a:hover > i {
+    color: var(--blanco);
 }
 
 .header-container a > i {
     margin: 2px 7px 0 0;
+    color: var(--rojo-2);
+}
+
+
+
+
+
+
+/* HERO-SECTION */
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: calc(100vh - 51px);
+    max-height: 1080px;
+
+    position: relative;
+}
+
+.hero-section img {
+    width: 250px;
+    aspect-ratio: 1/1;
+
+    border-radius: 500px;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--gris);
+    padding: 15px;
+    border-radius: 24px;
+}
+
+.hero__txt-container {
+    display: flex;
+    color: var(--blanco);
+    margin: 0 0 0 50px;
+    width: 500px;
+
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.hero__txt-container h2 {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.hero__txt-container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.gradient-text {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.gradient-text span {
+    background: linear-gradient(90deg, rgb(255, 0, 255), rgb(255, 37, 37), rgb(78, 78, 255), rgb(255, 0, 255));
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 4s ease-in-out infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 100% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+.hero__txt-container p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 1.2;   
+}
+
+.hero__txt-container a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-weight: 400;
+
+    background-color: var(--rojo-2);
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 7px 15px;
+
+    transition: transform 0.2s ease, background 0.1s ease;
+}
+
+.hero__txt-container i {
+    margin-left: 7px;
+    font-size: 22px;
+}
+
+.hero__txt-container a:hover {
+    transform: scale(1.05);
+    background-color: var(--rojo-1);
+}
+
+/* WAVES */
+
+.custom-shape-divider-bottom-1734132827 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1734132827 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 68px;
+}
+
+.custom-shape-divider-bottom-1734132827 .shape-fill {
+    fill: var(--gris);
+}
+
+/* PROYECTS SECTION */
+
+.proyects-section {
+    border-top: 3px solid var(--gris);
+    height: 100vh;
+    background-color: var(--gris);
 }
