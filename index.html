@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="header-container" aria-label="Main navigation">
+        <nav id="header" class="header-container" aria-label="Main navigation">
             <a href="/" aria-label="Go to Home page">
                 <i class="fi fi-ss-home"></i>
                 HOME
@@ -33,35 +33,6 @@
         </nav>
     </header>
 
-    <!-- <header>
-        <nav class="header-container" aria-label="Main navigation">
-            <div>
-                <a href="/" aria-label="Go to Home page">
-                    <p>HOME</p>
-                    <i class="fi fi-tr-house-chimney"></i>
-                </a>
-            </div>
-            <div>
-                <a href="/projects" aria-label="View projects">
-                    <p>PROJECTS</p>
-                    <i class="fi fi-tr-customize-computer"></i>
-                </a>
-            </div>
-            <div>
-                <a href="/about" aria-label="Learn more about us">
-                    <p>ABOUT</p>
-                    <i class="fi fi-tr-circle-user"></i>
-                </a>
-            </div>
-            <div>
-                <a href="/contact" aria-label="Contact us">
-                    <p>CONTACT</p>
-                    <i class="fi fi-tr-address-book"></i>
-                </a>
-            </div>
-        </nav>
-    </header> -->
-
     <section class="hero-section">
 
         <div class="hero-container">
@@ -71,9 +42,9 @@
                 <h2>Dylan Mazur Zgainer</h2>
                 <h1 class="gradient-text">Desarrollador <span>Front End</span>
                 </h1>
-                <p>Me apasiona crear interfaces web modernas y funcionales, con un enfoque en la experiencia del usuario. 
-                <br>
-                Estoy buscando una oportunidad para unirme a un equipo donde pueda contribuir con mi energía y seguir desarrollándome como profesional.</p>
+                <p>Apasionado en diseñar interfaces web modernas y funcionales, enfocadas en la experiencia del usuario. 
+                    <br><br>
+                    Estoy en mi segundo año de Licenciatura en Informática y busco un trabajo que me permita crecer profesionalmente, seguir aprendiendo y apoyar mis estudios.</p>
                 <a href="">Download CV<i class="fi fi-ss-cloud-download-alt"></i></i></a>
             </div>
             
@@ -87,22 +58,24 @@
     </section>
 
     <section class="projects-section">
-        <h3>PROYECTOS</h3>
-        
+        <div class="projects-title">
+            <h3>PROYECTOS DESTACADOS</h3>
+            <hr class="projects-hr">
+        </div>
+
         <div class="project-container">
             <img src="media/newgenpatio.jpg" alt="" class="project-img">
             <div class="project__txt-container">
                 <h4>New Gen Patio</h4>
                 <hr>
-                <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
-
+                <p>Diseñé y desarrollé un sitio web desde cero, gestionando todo el proceso, desde el diseño inicial hasta su finalización. Fue uno de mis mayores desafíos, trabajando en comunicación directa y constante con el cliente para garantizar un resultado excepcional.</p>
                 <div class="project__tech-urls">
                     <div class="project-tech">
                         <img src="media/html-5.png" alt="">
                         <img src="media/css-3.png" alt="">
                         <img src="media/js.png" alt="">
                         <img src="media/git.png" alt="">
-                        <img src="media/" alt="">
+                        <img src="media/github.png" alt="">
                     </div>
                     
                     <div class="project-urls">
@@ -114,7 +87,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
         
@@ -122,14 +94,14 @@
             <div class="project__txt-container">
                 <h4>devicethread<span style="font-size: 0.8em; vertical-align: super;">®</span></h4>
                 <hr>
-                <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
+                <p>Lideré la remodelación de un sitio web para una compañía hotelera con presencia en EE.UU. y Europa, optimizando diseño y funcionalidad para mejorar su alcance global y experiencia de usuario.</p>
                 <div class="project__tech-urls">
                     <div class="project-tech">
                         <img src="media/html-5.png" alt="">
                         <img src="media/css-3.png" alt="">
                         <img src="media/js.png" alt="">
                         <img src="media/git.png" alt="">
-                        <img src="media/" alt="">
+                        <img src="media/github.png" alt="">
                     </div>
                     
                     <div class="project-urls">
@@ -141,23 +113,21 @@
                         </a>
                     </div>
                 </div>
-
             </div>
             <img src="media/devicethread.jpg" alt="" class="project-img">
-
         </div>
-        
+
         <div class="project-container">
             <img src="media/smokinsilver.jpeg" alt="" class="project-img">
             <div class="project__txt-container">
                 <h4>Smokin Silver</h4>
                 <hr>
-                <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
+                <p>Hecho con un CMS (a pedido del cliente)</p>
 
                 <div class="project__tech-urls">
                     <div class="project-tech">
-                        <img src="media/" alt="">
-                        <img src="media/css-3.png" alt="">
+                        <img src="media/wordpress.png" alt="">
+                        <img src="media/elementor.png" alt="">
                     </div>
                     
                     <div class="project-urls">
@@ -169,7 +139,6 @@
                         </a>
                     </div>
                 </div>
-
             </div>
         </div>
 
@@ -177,14 +146,11 @@
             <div class="project__txt-container">
                 <h4>Ardmor</h4>
                 <hr>
-                <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
+                <p>Hecho con un CMS (a pedido del cliente)</p>
                 <div class="project__tech-urls">
                     <div class="project-tech">
-                        <img src="media/html-5.png" alt="">
-                        <img src="media/css-3.png" alt="">
-                        <img src="media/js.png" alt="">
-                        <img src="media/git.png" alt="">
-                        <img src="media/" alt="">
+                        <img src="media/wordpress.png" alt="">
+                        <img src="media/elementor.png" alt="">
                     </div>
                     
                     <div class="project-urls">
@@ -196,90 +162,11 @@
                         </a>
                     </div>
                 </div>
-
             </div>
             <img src="media/ardmor.jpg" alt="" class="project-img">
-
         </div>
         
-        <!-- <div class="all-projects-container">
-
-
-            <div class="project-container">
-                <div class="project-img">
-                    <img src="media/newgenpatio.jpg" alt="">
-                </div>
-                <div class="project-txt__container">
-                    <div class="project-txt">
-                        <h4>New Gen Patio</h4>
-                        <hr>
-                        <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
-                    </div>
-                    <div class="project-tech">
-                        <img src="media/html-5.png" alt="">
-                        <img src="media/css-3.png" alt="">
-                        <img src="media/js.png" alt="">
-                        <img src="media/git.png" alt="">
-                        <img src="media/github-negro.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <div class="project-container">
-            <div class="project-img">
-                <img src="media/devicethread.jpg" alt="">
-            </div>
-            <div class="project-txt__container">
-                <div class="project-txt">
-                    <h4>devicethread<span style="font-size: 0.8em; vertical-align: super;">®</span></h4>
-                    <hr>
-                    <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
-                </div>
-                <div class="project-tech">
-                    <img src="media/html-5.png" alt="">
-                    <img src="media/css-3.png" alt="">
-                    <img src="media/js.png" alt="">
-                    <img src="media/git.png" alt="">
-                    <img src="media/github-negro.png" alt="">
-                </div>
-            </div>
-            </div>
-            
-            <a class="project-container">
-                <div class="project-img">
-                    <img src="media/smokinsilver.jpeg" alt="">
-                </div>
-                <div class="project-txt__container">
-                    <div class="project-txt">
-                        <h4>Smokin Silver</h4>
-                        <hr>
-                        <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
-                    </div>
-                    <div class="project-tech">
-                        <img src="media/wordpress.png" alt="">
-                        <img src="media/elementor.png" alt="">
-                    </div>
-                </div>
-            </a>
-            
-            <div class="project-container">
-                <div class="project-img">
-                    <img src="media/ardmor.jpg" alt="">
-                </div>
-                <div class="project-txt__container">
-                    <div class="project-txt">
-                        <h4>Ardmor</h4>
-                        <hr>
-                        <p>Desarrollé este proyecto desde cero, trabajando 1 a 1 con el cliente para crear una solución personalizada que reflejara su visión. Fue un desafío interesante y muy enriquecedor.</p>
-                    </div>
-                    <div class="project-tech">
-                        <img src="media/wordpress.png" alt="">
-                        <img src="media/elementor.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
