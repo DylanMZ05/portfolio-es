@@ -103,8 +103,6 @@ header {
 
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 2.5px );
-    -webkit-backdrop-filter: blur( 2.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-top: 0;
     border-radius: 0 0 100px 100px;
@@ -220,8 +218,6 @@ header {
     width: 848px;
 
     box-shadow: 0 0 8px 0 rgba(135, 31, 31, 0.37);
-    backdrop-filter: blur( 1px );
-    -webkit-backdrop-filter: blur( 1.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
@@ -230,7 +226,12 @@ header {
     aspect-ratio: 1/1;
     object-fit: cover;
 
-    border-radius: 500px;
+    mask-image: linear-gradient(
+        black 80%,
+        transparent
+    );
+
+    margin-left: 10px;
 }
 
 .hero__txt-container {
@@ -442,8 +443,6 @@ header {
 
 .project-tech img{
     background: rgba( 220, 220, 220, 0.25 );
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
     
     border-radius: 4px;
     margin: 5px 0;
@@ -567,8 +566,6 @@ header {
 
     background: rgba(255, 255, 255, 0.208);
     box-shadow: 0 0 8px 0 rgba(135, 31, 31, 0.37);
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.347);
 }
@@ -677,8 +674,6 @@ header {
     
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     background: rgba(255, 255, 255, 0.865);
-    backdrop-filter: blur( 3.5px );
-    -webkit-backdrop-filter: blur( 3.5px );
 }
 
 .about-container img {
@@ -777,6 +772,7 @@ header {
 
 .contact-container:last-child {
     margin-top: 15px;
+
 }
 
 
@@ -791,12 +787,11 @@ header {
     .hero-container {
         width: 88vw;
         padding: 17px;
+        flex-direction: column;
     }
 
     .hero-container img {
-        border-radius: 12px;
-        height: 100%;
-        aspect-ratio: auto;
+        margin: 0 0 20px 0;
     }
 
     .hero__txt-container {
@@ -842,4 +837,42 @@ header {
 
         object-position: 0% 20%;
     }
+}
+
+@media (max-width: 700px) {
+    .project-container {
+        flex-direction: column;
+
+        width: 94vw;
+    }
+
+    .project-2 {
+        flex-direction: column-reverse;
+    }
+
+    .project-img {
+        width: 100%;
+    }
+
+    .project__txt-container {
+        margin: 10px 0;
+    }
+
+    .project__txt-container p {
+        max-width: 94vw;
+    }
+}
+
+@media (max-width: 620px) {
+    .hero__txt-container h2 {
+        font-size: 32px;
+    }
+
+    .hero__txt-container h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 550px) {
+    
 }
