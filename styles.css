@@ -184,7 +184,7 @@ header {
     -webkit-backdrop-filter: blur( 2.5px );
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     border-top: 0;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 100px 100px;
     max-width: 1200px;
 
     transition: background-color 0.5s ease, box-shadow 0.5s ease;
@@ -192,8 +192,8 @@ header {
 
 .header-container.scrolled {
     border: none;
-    background-color: #fff; /* Fondo blanco al hacer scroll */
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra para dar efecto de elevación */
+    background-color: var(--blanco);
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .header-container a {
@@ -213,12 +213,28 @@ header {
     border-radius: 0 0 8px 8px;
 }
 
+.header-container a:first-child {
+    border-radius: 0 0 8px 100px;
+}
+
+.header-container a:last-child {
+    border-radius: 0 0 100px 8px;
+}
+
 .header-container a:hover {
     transform: scale(1.07);
     background-color: var(--rojo-2);
     border-radius: 0 0 8px 8px;
 
     font-weight: 600;
+}
+
+.header-container a:hover:first-child {
+    border-radius: 0 0 8px 100px;
+}
+
+.header-container a:hover:last-child {
+    border-radius: 0 0 100px 8px;
 }
 
 .header-container a:hover > i {
