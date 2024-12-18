@@ -38,3 +38,17 @@ window.addEventListener('scroll', () => {
         header.classList.remove('scrolled');
     }
 });
+
+
+
+function copyToClipboard(elementId, triggerElement) {
+    const text = document.getElementById(elementId).innerText;
+    navigator.clipboard.writeText(text).then(() => {
+        triggerElement.classList.add('copied');
+        setTimeout(() => {
+            triggerElement.classList.remove('copied');
+        }, 2000);
+    }).catch(err => {
+        console.error('Error al copiar el texto', err);
+    });
+}

@@ -19,25 +19,25 @@
                 <li>            
                     <a href="#home" aria-label="Go to Home page">
                         <i class="fi fi-ss-home"></i>
-                        HOME
+                        INICIO
                     </a>
                 </li>
                 <li>
                     <a href="#projects" aria-label="View projects">
                         <i class="fi fi-ss-customize-computer"></i>
-                        PROJECTS
+                        PROJECTOS
                     </a>    
                 </li>
                 <li>
                     <a href="#about" aria-label="Learn more about us">
                         <i class="fi fi-ss-circle-user"></i>
-                        ABOUT
+                        SOBRE MI
                     </a>
                 </li>
                 <li>
                     <a href="tools.html" aria-label="Contact us">
                         <i class="fi fi-ss-tools"></i>
-                        TOOLS
+                        HERRAMIENTAS
                     </a>
                 </li>
             </ul>
@@ -276,20 +276,23 @@
             </p>
         </div>
 
-        <div class="contact">
+        <div id="contact" class="contact">
 
             <h4>CONTACTO</h4>
 
             <div class="contact-container">
                 <div class="email">
                     <i class="fi fi-ss-envelope"></i>
-                    <p>mazurzgainerdylan@gmail.com</p>
+                    <p id="email-text">mazurzgainerdylan@gmail.com</p>
                 </div>
                 <div class="copy-direct">
-                    <a href="">    
+                    <!-- Copiar Email -->
+                    <a href="#contact" onclick="copyToClipboard('email-text', this)">    
                         <i class="fi fi-ss-duplicate"></i>    
+                        <span class="tooltip">&#161;Se ha copiado el texto correctamente!</span>
                     </a>
-                    <a href="">
+                    <!-- Enviar Email -->
+                    <a href="mailto:mazurzgainerdylan@gmail.com">    
                         <i class="fi fi-ss-paper-plane-top"></i>    
                     </a>
                 </div>
@@ -297,13 +300,16 @@
             <div class="contact-container">
                 <div class="email">
                     <i class="fi fi-brands-whatsapp"></i>
-                    <p>+549 2257 538156</p>
+                    <p id="whatsapp-text">+549 2257 538156</p>
                 </div>
                 <div class="copy-direct">
-                    <a href="">    
+                    <!-- Copiar Teléfono -->
+                    <a href="#contact" onclick="copyToClipboard('whatsapp-text', this)">    
                         <i class="fi fi-ss-duplicate"></i>    
+                        <span class="tooltip">&#161;Se ha copiado el texto correctamente!</span>
                     </a>
-                    <a href="">
+                    <!-- Enviar a WhatsApp -->
+                    <a href="https://wa.me/5492257538156" target="_blank">    
                         <i class="fi fi-ss-paper-plane-top"></i>    
                     </a>
                 </div>

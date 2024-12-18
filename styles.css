@@ -219,7 +219,7 @@ header {
 .hamburger span {
     display: block;
     height: 3px;
-    background-color: #000000;
+    background-color: var(--blanco);
     border-radius: 2px;
     transition: all 0.3s ease;
 }
@@ -852,6 +852,34 @@ header {
 
 }
 
+.tooltip {
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.copy-direct a {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-direct a.copied .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 
 
@@ -961,30 +989,33 @@ header {
 }
 
 @media (max-width: 550px) {
-    header {
-        width: 100vw;
-        max-width: 1920px;
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50.1%);
 
-        background-color: var(--blanco);
-    
-        z-index: 1000;
-        transition: background-color 0.3s ease;
-    }
 
     .header-container {
         display: flex;
         justify-content: end;
+
+        border: none;
 
         height: 51px;
         border-radius: 0;
         width: 100vw;
         border-left: 0;
         border-right: 0;
+
+    
+        z-index: 1000;
+        background-color: #010101;
+        border: none;
     }
 
+    .header-container.scrolled {
+        border: none;
+        background-color: #010101;
+
+        box-shadow: 0 0 8px 0 rgba(31, 48, 135, 0.37);
+        backdrop-filter: blur(0px);
+    }
 
     nav ul {
         position: fixed;
@@ -1002,7 +1033,13 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: var(--blanco);
+        background-color: #010101;
+        border: none;
+
+        border-radius: 0 0 8px 8px;
+
+        box-shadow: 0 7px 8px 0 rgba(31, 48, 135, 0.146);
+
         width: 100vw;
         margin: 0;
         animation: slideIn 0.3s ease forwards;
@@ -1013,7 +1050,9 @@ header {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: var(--blanco);
+
+        background-color: #000;
+        border: none;
 
         z-index: 1;
 
@@ -1047,11 +1086,30 @@ header {
     }
 
     .header-container a {
-        padding: 5px;
+        padding: 15px 0px 15px 35vw;
+        width: 100%;
+        color: var(--blanco);
+
+        display: flex;
+        justify-content: start;
     }
 
-    header ul li {
-        margin: 15px 0;
+    .header-container li:last-child {
+        padding-bottom: 20px;
+    }
+
+    .header-container li:hover {
+        transform: scale(1);
+        background-color: #010101;
+
+        font-weight: 800;
+
+    }
+    
+    .header-container a:hover > i {
+        color: var(--rojo-2);
+
+        text-decoration: none;
     }
 
     .hamburger {
