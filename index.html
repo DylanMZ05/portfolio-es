@@ -15,32 +15,48 @@
 <body>
     <header>
         <nav id="header" class="header-container" aria-label="Main navigation">
-            <a href="/" aria-label="Go to Home page">
-                <i class="fi fi-ss-home"></i>
-                HOME
-            </a>
-            <a href="/projects" aria-label="View projects">
-                <i class="fi fi-ss-customize-computer"></i>
-                PROJECTS
-            </a>
-            <a href="/about" aria-label="Learn more about us">
-                <i class="fi fi-ss-circle-user"></i>
-                ABOUT
-            </a>
-            <a href="/contact" aria-label="Contact us">
-                <i class="fi fi-ss-tools"></i>
-                TOOLS
-            </a>
+            <ul>
+                <li>            
+                    <a href="#home" aria-label="Go to Home page">
+                        <i class="fi fi-ss-home"></i>
+                        HOME
+                    </a>
+                </li>
+                <li>
+                    <a href="#projects" aria-label="View projects">
+                        <i class="fi fi-ss-customize-computer"></i>
+                        PROJECTS
+                    </a>    
+                </li>
+                <li>
+                    <a href="#about" aria-label="Learn more about us">
+                        <i class="fi fi-ss-circle-user"></i>
+                        ABOUT
+                    </a>
+                </li>
+                <li>
+                    <a href="tools.html" aria-label="Contact us">
+                        <i class="fi fi-ss-tools"></i>
+                        TOOLS
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
 
-    <section class="hero-section">
+    <section id="home" class="hero-section">
 
         <div class="hero-container">
-            <img src="media/DYLAN-SIN-FONDO.png" alt="foto-perfil">
-            
-            <div class="hero__txt-container">
+            <div class="hero-img">
+                <img src="media/DYLAN-SIN-FONDO.png" alt="foto-perfil">
                 <h2>Dylan Mazur Zgainer</h2>
+            </div>
+            <div class="hero__txt-container">
                 <h1 class="gradient-text">Desarrollador <span>Front End JR</span>
                 </h1>
                 <p>Apasionado en diseñar interfaces web modernas y funcionales, enfocadas en la experiencia del usuario. 
@@ -58,7 +74,7 @@
         </div>
     </section>
 
-    <section class="projects-section">
+    <section id="projects" class="projects-section">
         <div class="projects-title">
             <h3>PROYECTOS DESTACADOS</h3>
             <hr class="projects-hr">
@@ -237,7 +253,7 @@
 
     </section>
 
-    <section class="about-section">
+    <section id="about" class="about-section">
         <div class="about-title">
             <h3>SOBRE MI</h3>
             <hr class="about-hr">
