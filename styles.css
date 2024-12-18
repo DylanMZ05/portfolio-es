@@ -739,6 +739,14 @@ header {
     margin-top: 50px;
 
     text-shadow: 1px 1px 5px #000;
+
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 30%;
 }
 
 .skills-father-container {
@@ -749,6 +757,54 @@ header {
     box-shadow: 0 0 8px 0 rgba(135, 31, 31, 0.37);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.347);
+}
+
+.skills-father-container {
+    view-timeline-name: --skills-scroll;
+    animation-timeline: --skills-scroll;
+    animation-name: fade-in-diagonal;
+    animation-fill-mode: both;
+    animation-range: entry 0% cover 10%;
+}
+
+.skills-container h4 {
+    view-timeline-name: --skills-title;
+    animation-timeline: --skills-title;
+    animation-name: fade-in-diagonal;
+    animation-range: entry 0% cover 20%;
+    animation-delay: 0.1s;
+}
+
+.skills-container img {
+    opacity: 0;
+    transform: translate(-40px, -40px) scale(0.8);
+    view-timeline-name: --reveal-img;
+    animation-timeline: --reveal-img;
+    animation-name: fade-in-diagonal;
+    animation-fill-mode: both;
+    animation-range: entry 0% cover 10%;
+}
+
+.skills-container img:nth-child(1) { animation-delay: 0.1s; }
+.skills-container img:nth-child(2) { animation-delay: 0.2s; }
+.skills-container img:nth-child(3) { animation-delay: 0.3s; }
+.skills-container img:nth-child(4) { animation-delay: 0.4s; }
+.skills-container img:nth-child(5) { animation-delay: 0.5s; }
+.skills-container img:nth-child(6) { animation-delay: 0.6s; }
+.skills-container img:nth-child(7) { animation-delay: 0.7s; }
+.skills-container img:nth-child(8) { animation-delay: 0.8s; }
+.skills-container img:nth-child(9) { animation-delay: 0.9s; }
+.skills-container img:nth-child(10) { animation-delay: 1.0s; }
+
+@keyframes fade-in-diagonal {
+    from {
+        opacity: 0;
+        transform: translate(-40px, -40px) scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0) scale(1);
+    }
 }
 
 .skills-container h4{
@@ -773,6 +829,14 @@ header {
     border: none;
     border-radius: 50px;
     margin: 15px 0 0;
+
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 15% cover 30%;
 }
 
 .skills-section img {
@@ -839,6 +903,14 @@ header {
     font-weight: 600;
 
     text-shadow: 1px 1px 5px #000;
+
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 25% cover 30%;
 }
 
 .about-hr {
@@ -848,6 +920,14 @@ header {
     border: none;
     border-radius: 50px;
     margin: 15px 0 0;
+
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 15% cover 30%;
 }
 
 .about-container {
@@ -861,6 +941,14 @@ header {
     
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     background: rgba(255, 255, 255, 0.865);
+
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 0% cover 40%;
 }
 
 .about-container img {
@@ -902,11 +990,20 @@ header {
     margin-bottom: 30px;
 
     text-shadow: 1px 1px 5px #000;
+
+
 }
 
 .contact {
     margin-top: 50px;
 
+    view-timeline-name: --reveal;
+
+    animation-name: show;
+    animation-fill-mode: both;
+
+    animation-timeline: --reveal;
+    animation-range: entry 0% cover 25%;
 }
 
 .contact-container {
