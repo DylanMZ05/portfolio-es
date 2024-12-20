@@ -1,10 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const emailPart1 = "mazurzgainerdylan";
-    const emailPart2 = "gmail.com";
-    const email = `${emailPart1}@${emailPart2}`;
-    document.getElementById("email-text").textContent = email;
+const btn = document.getElementById('button');
 
-    const mailtoLink = document.getElementById("email-link");
-    mailtoLink.href = `mailto:${email}`;
+document.getElementById('form')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Sending...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_akkc0n7';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Send Email';
+      alert('Sent!');
+    }, (err) => {
+      btn.value = 'Send Email';
+      alert(JSON.stringify(err));
+    });
 });
-
