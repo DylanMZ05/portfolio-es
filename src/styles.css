@@ -1240,6 +1240,10 @@ input[type="submit"] {
         backdrop-filter: blur(0px);
     }
 
+    .header-container ul {
+        display: none;
+    }
+
     nav ul {
         position: fixed;
         top: 50px;

@@ -28,7 +28,7 @@
 
 .title-container {
     margin: 50px 10px;
-    max-width: 900px;
+    width: 100%;
 
     color: var(--blanco);
 
@@ -136,7 +136,7 @@
     transition: transform 0.2s ease, background 0.1s ease;
 
     position: absolute;
-    bottom: -20px;
+    bottom: 0px;
     left: 25%;
     right: 25%;
 }
@@ -180,6 +180,7 @@
 
 .tool-container:nth-child(7) {
     animation-delay: .35s;
+    margin-bottom: 50px;
 }
 
 @keyframes slideIn-2 {
@@ -190,7 +191,6 @@
         opacity: 1;
     }
 }
-
 
 
 
@@ -289,6 +289,7 @@
         animation-timeline: --reveal;
         animation-range: entry -80% cover 30%;
     }
+
 
     @keyframes slideIn-2 {
         from {
