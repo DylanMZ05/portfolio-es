@@ -1,13 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* FONTS */
 
 @font-face {
     font-family: 'Montserrat';
-    src: url(fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
+    src: url(../fonts/Montserrat/Montserrat-VariableFont_wght.ttf);
 }
 
 @font-face {
     font-family: 'Permanent Marker';
-    src: url(fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
+    src: url(../fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
 }
 
 /* COLORES */
@@ -254,7 +258,6 @@ header {
     flex-direction: column;
 
     height: calc(100vh - 51px);
-    max-height: 1080px;
 
     position: relative;
 
@@ -768,13 +771,22 @@ header {
 }
 
 .skills-father-container {
-    margin: 50px 0 75px;
     padding: 15px;
 
     background: rgba(255, 255, 255, 0.208);
     box-shadow: 0 0 8px 0 rgba(135, 31, 31, 0.37);
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.347);
+
+    width: 450px;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.mb-75 {
+    margin-bottom: 75px;
 }
 
 .skills-father-container {
@@ -801,6 +813,11 @@ header {
     animation-name: fade-in-diagonal;
     animation-fill-mode: both;
     animation-range: entry 0% cover 10%;
+}
+
+.skills-container div {
+    display: flex;
+    align-items: center;
 }
 
 .skills-container img:nth-child(1) { animation-delay: 0.1s; }
@@ -1139,7 +1156,7 @@ input[type="submit"] {
     display: block;
     padding: 6px 30px;
     font-size: 14px;
-    background-color: #4460AA;
+    background-color: var(--rojo-2);
     color: #fff;
     border: none
 }
@@ -1370,6 +1387,19 @@ input[type="submit"] {
         width: 30px;
     }
 
+    .about-container img {
+        object-position: 50% 40%;
+    }
+}
+
+@media (max-width: 650px) {
+    .hero__txt-container h1 {
+        font-size: 6vw;
+    }
+}
+
+@media (max-width: 600px) {
+    
     .about-container {
         flex-direction: column;
     }
@@ -1380,17 +1410,11 @@ input[type="submit"] {
 
         border-radius: 14px 14px 0 0;
 
-        object-position: 0% 20%;
+        object-position: 0% 33%;
     }
 
     .about-container p {
         padding: 10px;
-    }
-}
-
-@media (max-width: 650px) {
-    .hero__txt-container h1 {
-        font-size: 6vw;
     }
 }
 
@@ -1570,5 +1594,25 @@ input[type="submit"] {
 
     .email p {
         font-size: 14px;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 800px) {
+    .hero-section {
+        height: max-content;
+    }
+    
+    .hero-container {
+        margin: 10vh 0 13vh;
+    }
+}
+
+@media (max-width: 950px) and (max-height: 600px) {
+    .hero-section {
+        height: max-content;
+    }
+    
+    .hero-container {
+        margin: 15vh 0 23vh;
     }
 }
