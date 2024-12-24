@@ -27,7 +27,7 @@
 }
 
 .title-container {
-    margin: 50px 10px;
+    margin: 50px 0;
     width: 100%;
 
     color: var(--blanco);
@@ -36,15 +36,16 @@
 }
 
 .title-container h4 {
-    font-size: 30px;
+    font-size: 42px;
     font-weight: 500;
+    margin: 0 15px;
 }
 
 .title-container p {
     font-size: 24px;
     font-weight: 500;
 
-    margin-top: 15px;
+    margin: 15px 15px 0;
 
     opacity: .8;
 }
@@ -59,6 +60,8 @@
     max-width: 1500px;
 
     padding: 0 25px;
+
+    margin-bottom: 50px;
 }
 
 .tool-container {
@@ -180,7 +183,6 @@
 
 .tool-container:nth-child(7) {
     animation-delay: .35s;
-    margin-bottom: 50px;
 }
 
 @keyframes slideIn-2 {
@@ -193,11 +195,76 @@
 }
 
 
+.all-dibul-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
 
+    max-width: 1500px;
+
+    padding: 0 25px;
+}
+
+.dibul-container {
+    position: relative;
+
+    width: 300px;
+    border-radius: 16px;
+    background-color: var(--blanco);
+    height: 470px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border: 1px solid rgb(67 67 67);
+
+    transition: transform .3s ease;
+}
+
+.dibul-container:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.dibul-img {
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 14px 14px 0 0;
+}
+
+.dibul-info {
+    padding: 9px;
+}
+
+.dibul-info h5 {
+    font-size: 20px;
+    font-weight: 500;
+
+    color: var(--negro)
+}
+
+.dibul-info hr {
+    width: 50px;
+    border: none;
+    height: 3px;
+    border-radius: 50px;
+    background-color: #0037ff;
+    margin: 7px 1px;
+}
+
+.links-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 7px;
+}
+
+.links-container a {
+    text-decoration: none;
+}
 
 
 .contact {
-    margin: 0;
+    margin: 50px 0 0 0;
 }
 
 
@@ -254,6 +321,25 @@
     
     .tool-container:nth-child(7) {
         animation-delay: .35s;
+    }
+}
+
+@media (max-width: 669px) {
+    .all-dibul-container {
+        flex-direction: column;
+    }
+
+    .dibul-container {
+        width: 90vw;
+        height: 200px;
+        display: flex;
+    }
+
+    .dibul-img {
+        width: 200px;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        border-radius: 15px 0 0 15px;
     }
 }
 
@@ -319,5 +405,27 @@
     .tool-info a{
         left: 9px;
         right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .dibul-container {
+        flex-direction: column;
+        height: 400px;
+    }
+
+    .dibul-img {
+        width: 90vw;
+        height: 250px;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .dibul-info {
+        height: 150px;
+    }
+
+    .dalto {
+        object-position: center top;
     }
 }
