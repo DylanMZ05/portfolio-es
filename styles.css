@@ -313,7 +313,7 @@ header {
     flex-direction: column;
 }
 
-.hero-img img {
+.hero-img2 {
     width: 250px;
     aspect-ratio: 1/1;
     object-fit: cover;
@@ -423,7 +423,7 @@ header {
     opacity: 0.7;
 }
 
-.hero__txt-container a {
+.download-cv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,23 +435,18 @@ header {
     text-decoration: none;
     padding: 7px 15px;
 
-    transition: transform 0.2s ease, background 0.1s ease;
-
+    
     opacity: 0;
     animation: bounceIn .3s ease-out .35s forwards;
+    transition: transform 0.2s ease, background 0.1s ease;
 }
 
 @keyframes bounceIn {
     0% {
         opacity: 0;
-        transform: scale(0.8);
-    }
-    60% {
-        transform: scale(1.05);
     }
     100% {
         opacity: 1;
-        transform: scale(1);
     }
 }
 
@@ -460,9 +455,22 @@ header {
     font-size: 22px;
 }
 
-.hero__txt-container a:hover {
+.download-cv:hover {
     transform: scale(1.05);
     background-color: var(--rojo-1);
+}
+
+.linkedin {
+    margin: 0;
+    width: 42px;
+
+    opacity: 0;
+    animation: bounceIn .3s ease-out .35s forwards;
+    transition: transform 0.3s ease;
+}
+
+.linkedin:hover {
+    transform: scale(1.1);
 }
 
 /* INVERT TRIANGLE */
@@ -1161,13 +1169,27 @@ header {
 
 input[type="submit"] {
     display: block;
-    padding: 6px 30px;
+    padding: 8px 30px;
     font-size: 14px;
     background-color: var(--rojo-2);
     color: #fff;
-    border: none
+    border-radius: 4px;
+    border: none;
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex a {
+    margin-left: 10px;
+}
+
+.flex img {
+    width: 32px;
+    margin-top: 3px;
+}
 
 
 
@@ -1185,7 +1207,7 @@ input[type="submit"] {
         flex-direction: column;
     }
 
-    .hero-container img {
+    .hero-img2 {
         margin: 0 0 20px 0;
     }
 
