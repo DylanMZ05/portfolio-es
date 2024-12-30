@@ -778,7 +778,7 @@ header {
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.347);
 
-    width: 450px;
+    width: 300px;
 }
 
 .mt-50 {
@@ -795,6 +795,10 @@ header {
     animation-name: fade-in-diagonal;
     animation-fill-mode: both;
     animation-range: entry 0% cover 10%;
+}
+
+.skills-container {
+    text-align: center;
 }
 
 .skills-container h4 {
@@ -818,6 +822,9 @@ header {
 .skills-container div {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .skills-container img:nth-child(1) { animation-delay: 0.1s; }
@@ -845,7 +852,7 @@ header {
 .skills-container h4{
     font-size: 22px;
     font-weight: 500;
-    margin: 15px 0 3px 6px;
+    margin: 15px 0 3px;
 
     text-shadow: 2px 2px 5px #000;
 }
@@ -1433,9 +1440,6 @@ input[type="submit"] {
 
 
 
-    .skills-father-container {
-        width: 80vw;
-    }
 
     .email p {
         font-size: 16px;
@@ -1462,10 +1466,6 @@ input[type="submit"] {
         width: 200px;
     }
 
-    .skills-section img {
-        width: 45px;
-    }
-
     .skills-container {
         display: flex;
         justify-content: center;
@@ -1473,13 +1473,6 @@ input[type="submit"] {
         flex-direction: column;
 
         text-align: center;
-    }
-
-    .skills-container div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
     }
 
     .skills-container h4 {
@@ -1573,6 +1566,10 @@ input[type="submit"] {
 
     .project__txt-container p {
         font-size: 14px;
+    }
+
+    .skills-father-container {
+        width: 80vw;
     }
 
     .skills-container h4 {
