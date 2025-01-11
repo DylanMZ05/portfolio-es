@@ -10,5 +10,23 @@
         "title": "Front End JR <span>Developer</span>",
         "subtitle": "Passionate about designing modern and functional web interfaces focused on user experience, mainly using <span>HTML, CSS, and JavaScript.</span><br><br>I am in my second year of a Bachelor's degree in Computer Science and am looking for a job that allows me to grow professionally, keep learning, and support my studies.",
         "button": "Download CV"
-    }
+    },
+    "projects": {
+        "title": "FEATURED PROJECTS",
+
+        "project-1": "New Gen Patio",
+        "subtitle-1": "I designed and developed a website from  scratch, managing the entire process from initial design to  completion. <br> It was one of my biggest challenges,    working in direct and constant communication with the  client to ensure an exceptional result.",
+
+        "project-2": "devicethread<span style='font-size: 0.8em;    vertical-align: super;'>®</span>",
+        "subtitle-2": "I led the redesign of a website for a hotel  company with a presence in the U.S. and Europe, optimizing   design and functionality to enhance its global reach and  user experience.",
+
+        "project-3": "Smokin SilverBacks",
+        "subtitle-3": "I developed the website for a cigar lounge   with a presence in the U.S., focusing on a sleek and  functional design to attract its target audience and     highlight its unique identity.<br><br>Built with a CMS (at  the client's request).",
+
+        "project-4": "Ardmor",
+        "subtitle-4": "I redesigned the website for a windows and   doors company with a presence in the U.S., improving its  design and functionality to showcase its services and reach  more customers.<br><br>Built with a CMS (at the client's     request).",
+
+        "button-code": "View Code<img src='media//github.png' alt=''>",
+        "button-link": "View Website"
+}
 }
