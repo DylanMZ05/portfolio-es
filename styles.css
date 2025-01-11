@@ -222,7 +222,7 @@ header {
 
 .header-container a > i {
     margin: 2px 7px 0 0;
-    color: var(--rojo-2);
+    color: #ff0000;
 }
 
 
@@ -244,7 +244,25 @@ header {
     transition: all 0.3s ease;
 }
 
+.languages {
+    display: flex;
+}
 
+.languages button {
+    background-color: transparent;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.languages img {
+    width: 32px;
+    margin: 0 5px;
+}
+
+.languages button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
 
 
 
@@ -1259,6 +1277,8 @@ input[type="submit"] {
         z-index: 1000;
         background-color: #010101;
         border: none;
+
+        animation: none;
     }
 
     .header-container.scrolled {
@@ -1341,7 +1361,7 @@ input[type="submit"] {
     }
 
     .header-container a {
-        padding: 15px 0px 15px 35vw;
+        margin: auto 0;
         width: 100%;
         color: var(--blanco);
 
