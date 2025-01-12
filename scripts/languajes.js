@@ -1,7 +1,7 @@
 const langButtons = document.querySelectorAll('.lang-button');
 const textToChange = document.querySelectorAll('[data-section]');
 
-const jsonBasePath = '../jsons/';
+const jsonBasePath = './';
 
 langButtons.forEach(button => {
     button.addEventListener('click', () => {
