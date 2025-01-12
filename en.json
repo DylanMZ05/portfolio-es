@@ -9,7 +9,7 @@
         "name": "Dylan Mazur Zgainer",
         "title": "Front End JR <span>Developer</span>",
         "subtitle": "Passionate about designing modern and functional web interfaces focused on user experience, mainly using <span>HTML, CSS, and JavaScript.</span><br><br>I am in my second year of a Bachelor's degree in Computer Science and am looking for a job that allows me to grow professionally, keep learning, and support my studies.",
-        "button": "Download CV"
+        "button": "Download CV<i class='fi fi-ss-cloud-download-alt'></i>"
     },
     "projects": {
         "title": "FEATURED PROJECTS",

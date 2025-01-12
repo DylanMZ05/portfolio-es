@@ -69,7 +69,25 @@
                     <br><br>
                     Estoy en mi segundo año de Licenciatura en Informática y busco un trabajo que me permita crecer profesionalmente, seguir aprendiendo y apoyar mis estudios.
                 </p>
-                <a href="media/CV-MAZUR-ZGAINER.pdf" download="CV-MAZUR-ZGAINER.pdf" class="download-cv" data-section="hero" data-value="button">Descargar CV<i class="fi fi-ss-cloud-download-alt"></i></i></a>
+                <button type="button" id="showModal" class="download-cv" data-section="hero" data-value="button">Descargar CV <i class="fi fi-ss-cloud-download-alt"></i></button>
+
+                <dialog id="favDialog" class="dialog">
+                    <button type="button" id="closeModal" class="close-modal"><i class="fi fi-ss-circle-xmark"></i></button>
+                    <h4>Elige el idioma de tu preferencia</h4>
+                    <div class="dialog-idiomas">
+                        <img src="media/espana.png" alt="">
+                        <a href="media/CV-MAZUR-ZGAINER.pdf" download="CV-MAZUR-ZGAINER-ES.pdf" class="download-cv" data-section="hero" data-value="button">
+                            Descargar CV <i class="fi fi-ss-cloud-download-alt"></i>
+                        </a>
+                    </div>
+                    <div class="dialog-idiomas">
+                        <img src="media/reino-unido.png" alt="">
+                        <a href="media/CV-MAZUR-ZGAINER-EN.pdf" download="CV-MAZUR-ZGAINER-EN.pdf" class="download-cv" data-section="hero" data-value="button">
+                            Download CV <i class="fi fi-ss-cloud-download-alt"></i>
+                        </a>
+                    </div>
+                </dialog>
+
                 <a href="https://www.linkedin.com/in/dylan-mazur-zgainer-5ab1911b5/">
                     <img src="media/linkedin.png" title="LINKEDIN" alt="LINKEDIN" class="linkedin">
                 </a>
@@ -294,9 +312,14 @@
             </form>            
         </div>
     </section>
+
+    
+
+
     <script src="scripts/script.js"></script>
     <script src="scripts/contact.js"></script>
     <script src="scripts/languajes.js"></script>
+    <script src="scripts/modal-cv.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
