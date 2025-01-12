@@ -28,5 +28,11 @@
 
         "button-code": "Ver Código<img src='media//github.png' alt=''>",
         "button-link": "Ver Sitio<img src='media//url.png' alt=''>"
+    },
+    "skills": {
+        "title": "HABILIDADES",
+        "subtitle-1": "Lenguajes y Tecnologías",
+        "subtitle-2": "CMS",
+        "subtitle-3": "Aprendizajes en curso"
     }
 }
