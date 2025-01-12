@@ -561,9 +561,7 @@ header {
     margin: 0;
     width: 42px;
 
-    opacity: 0;
-    animation: bounceIn .3s ease-out .35s forwards;
-    transition: transform 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
 .linkedin:hover {
