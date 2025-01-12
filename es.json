@@ -7,9 +7,10 @@
     },
     "hero": {
         "name": "Dylan Mazur Zgainer",
-        "title": "Desarrollador <span>Front End JR</span>",
+        "title": "Desarrollador <span>Front End</span>",
         "subtitle": "Apasionado en diseñar interfaces web modernas y funcionales, enfocadas en la experiencia del usuario, utilizando principalmente <span>HTML, CSS Y JavaScript.</span><br><br>Estoy en mi segundo año de Licenciatura en Informática y busco un trabajo que me permita crecer profesionalmente, seguir aprendiendo y apoyar mis estudios.",
-        "button": "Descargar CV<i class='fi fi-ss-cloud-download-alt'></i>"
+        "button": "Descargar CV<i class='fi fi-ss-cloud-download-alt'></i>",
+        "dialog-title": "Elige el idioma de tu prefencia"
     },
     "projects": {
         "title": "PROYECTOS DESTACADOS",
@@ -44,9 +45,12 @@
         "txt-1": "Nombre",
         "txt-2": "Mensaje"
     },
+
+
+
     "hero-2": {
         "title": "Aquí dejo algunas herramientas y recursos que utilizo en mi día a día.",
-        "subtite": "Quiero aclarar que NADA de esto fue creado por mí, son meras recomendaciones."
+        "subtitle": "Quiero aclarar que NADA de esto fue creado por mí, son meras recomendaciones."
     },
     "tools": {
         "txt-1": "Colección de Íconos para Interfaces",
