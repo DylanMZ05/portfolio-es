@@ -18,28 +18,34 @@
         <nav id="header" class="header-container" aria-label="Main navigation">
             <ul>
                 <li>            
-                    <a href="index.html#home" aria-label="Go to Home page">
-                        <i class="fi fi-ss-home"></i>
-                        INICIO
+                    <a href="index.html#home" aria-label="Go to Home page" data-section="header" data-value="home">
+                        <i class='fi fi-ss-home'></i>
+                        Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="index.html#projects" aria-label="View projects">
-                        <i class="fi fi-ss-customize-computer"></i>
-                        PROJECTOS
+                    <a href="index.html#projects" aria-label="View projects" data-section="header" data-value="projects">
+                        <i class='fi fi-ss-customize-computer'></i>
+                        Proyectos
                     </a>    
                 </li>
                 <li>
-                    <a href="index.html#about" aria-label="Learn more about us">
-                        <i class="fi fi-ss-circle-user"></i>
-                        SOBRE MI
+                    <a href="index.html#about" aria-label="Learn more about us" data-section="header" data-value="about">
+                        <i class='fi fi-ss-circle-user'></i>
+                        Sobre Mí
                     </a>
                 </li>
                 <li>
-                    <a href="tools.html" aria-label="Contact us">
-                        <i class="fi fi-ss-tools"></i>
-                        HERRAMIENTAS
+                    <a href="tools.html" aria-label="Contact us" data-section="header" data-value="tools">
+                        <i class='fi fi-ss-tools'></i>
+                        Herramientas
                     </a>
+                </li>
+                <li>
+                    <div class="languages">
+                        <button class="lang-button" data-language="es"><img src="media/espana.png" alt=""></button>
+                        <button class="lang-button" data-language="en"><img src="media/reino-unido.png" alt=""></button>
+                    </div>
                 </li>
             </ul>
             <div class="hamburger" id="hamburger">
@@ -68,7 +74,7 @@
                 <div class="tool-info">
                     <h5>Flaticon</h5>
                     <hr>
-                    <p>Colección de Íconos para Interfaces</p>
+                    <p data-section="tools" data-value="txt-1">Colección de Íconos para Interfaces</p>
                     <a href="https://www.flaticon.es/" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -80,7 +86,7 @@
                 <div class="tool-info">
                     <h5>WebCode Tools</h5>
                     <hr>
-                    <p>Generador de código CSS</p>
+                    <p data-section="tools" data-value="txt-2">Generador de código CSS</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -92,7 +98,7 @@
                 <div class="tool-info">
                     <h5>CSS Scan</h5>
                     <hr>
-                    <p>Fabulosas sombras para tu página</p>
+                    <p data-section="tools" data-value="txt-3">Fabulosas sombras para tu página</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -104,7 +110,7 @@
                 <div class="tool-info">
                     <h5>Glassmorphism Generator</h5>
                     <hr>
-                    <p>Generador de tarjetas con glassmorphism</p>
+                    <p data-section="tools" data-value="txt-4">Generador de tarjetas con glassmorphism</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -116,7 +122,7 @@
                 <div class="tool-info">
                     <h5>Custom Shape Dividers</h5>
                     <hr>
-                    <p>Creador imagenes SVG para divir tu página con Shapes</p>
+                    <p data-section="tools" data-value="txt-5">Creador imagenes SVG para divir tu página con Shapes</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -128,7 +134,7 @@
                 <div class="tool-info">
                     <h5>Magic Patterns</h5>
                     <hr>
-                    <p>Librería con patrones de fondo para CSS</p>
+                    <p data-section="tools" data-value="txt-6">Librería con patrones de fondo para CSS</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -140,7 +146,7 @@
                 <div class="tool-info">
                     <h5>Guide of animation in UX</h5>
                     <hr>
-                    <p>Una guía de principios para diseño UX</p>
+                    <p data-section="tools" data-value="txt-7">Una guía de principios para diseño UX</p>
                     <a href="https://webcode.tools/css-generator" target="_blank">
                         Link<img src="media//url.png" alt="">
                     </a>
@@ -160,17 +166,17 @@
 
         <div>
             <div class="title-container">
-                <h4>Referentes en Desarrollo</h4>
-                <p>Aquí un pequeño apartado de la gente de la que aprendo constantemente</p>
+                <h4 data-section="dibul" data-value="title">Referentes en Desarrollo</h4>
+                <p data-section="dibul" data-value="txt">Aquí un pequeño apartado de la gente de la que aprendo constantemente</p>
             </div>
             <div class="all-dibul-container">
 
                 <div class="dibul-container">
                     <img src="media//midu.jpg" alt="" class="dibul-img">
                     <div class="dibul-info">
-                        <h5>Midudev</h5>
+                        <h5 data-section="dibul" data-value="title-2">Midudev</h5>
                         <hr>
-                        <p>Experto en desarrollo web que enseña programación de forma práctica y accesible.</p>
+                        <p data-section="dibul" data-value="txt-2">Experto en desarrollo web que enseña programación de forma práctica y accesible.</p>
                         <div class="links-container">
                             <a href="https://www.instagram.com/midu.dev/?hl=es" target="_blank">
                                 <img src="media/instagram.png" alt="">
@@ -188,9 +194,9 @@
                 <div class="dibul-container">
                     <img src="media//gentlemanprograming.jpg" alt="" class="dibul-img">
                     <div class="dibul-info">
-                        <h5>Gentleman Programming</h5>
+                        <h5 data-section="dibul" data-value="title-3">Gentleman Programming</h5>
                         <hr>
-                        <p>Creador de contenido que enseña desarrollo web con un enfoque elegante, detallado y centrado en buenas prácticas.</p>
+                        <p data-section="dibul" data-value="txt-3">Creador de contenido que enseña desarrollo web con un enfoque elegante, detallado y centrado en buenas prácticas.</p>
                         <div class="links-container">
                             <a href="https://www.instagram.com/gentlemanprogramming/" target="_blank">
                                 <img src="media/instagram.png" alt="">
@@ -208,9 +214,9 @@
                 <div class="dibul-container">
                     <img src="media//dalto.jpg" alt="" class="dibul-img dalto">
                     <div class="dibul-info">
-                        <h5>Soy Dalto</h5>
+                        <h5 data-section="dibul" data-value="title-3">Soy Dalto</h5>
                         <hr>
-                        <p>Educador en programación que enseña conceptos complejos de forma simple y entretenida, ideal para aprender desde cero.</p>
+                        <p data-section="dibul" data-value="txt-3">Educador en programación que enseña conceptos complejos de forma simple y entretenida, ideal para aprender desde cero.</p>
                         <div class="links-container">
                             <a href="https://www.instagram.com/soydalto/" target="_blank">
                                 <img src="media/instagram.png" alt="">
@@ -230,20 +236,25 @@
 
         <div id="contact" class="contact">
 
-            <h4>CONTACTO</h4>
+            <h4 data-section="contact" data-value="title">CONTACTO</h4>
 
             <form id="form">
                 <div class="field">
-                    <label for="from_name">Nombre</label>
+                    <label for="from_name" data-section="contact" data-value="txt-1">Nombre</label>
                     <input type="text" name="from_name" id="from_name">
                 </div>
                 <div class="field">
-                    <label for="message">Mensaje</label>
+                    <label for="message" data-section="contact" data-value="txt-2">Mensaje</label>
                     <input type="text" name="message" id="message">
                 </div>
 
-                <input type="submit" id="button" value="Send Email" class="shadow-lg hover:cursor-pointer hover:bg-red-600 rounded-full">
-            </form>
+                <div class="flex">
+                    <input type="submit" id="button" value="Send Email" class="shadow-lg hover:cursor-pointer hover:bg-red-600 rounded-full">
+                    <a href="https://www.linkedin.com/in/dylan-mazur-zgainer-5ab1911b5/">
+                        <img src="media/linkedin.png" title="LINKEDIN" alt="LINKEDIN">
+                    </a>
+                </div>
+            </form>  
         </div>
     </section>
 

@@ -43,5 +43,31 @@
         "title": "CONTACTO",
         "txt-1": "Nombre",
         "txt-2": "Mensaje"
+    },
+    "hero-2": {
+        "title": "Aquí dejo algunas herramientas y recursos que utilizo en mi día a día.",
+        "subtite": "Quiero aclarar que NADA de esto fue creado por mí, son meras recomendaciones."
+    },
+    "tools": {
+        "txt-1": "Colección de Íconos para Interfaces",
+        "txt-2": "Generador de código CSS",
+        "txt-3": "Fabulosas sombras para tu página",
+        "txt-4": "Generador de tarjetas con glassmorphism",
+        "txt-5": "Creador imagenes SVG para divir tu página con Shapes",
+        "txt-6": "Librería con patrones de fondo para CSS",
+        "txt-7": "Una guía de principios para diseño UX"
+    },
+    "dibul": {
+        "title": "Referentes en Desarrollo",
+        "txt": "Aquí un pequeño apartado de la gente de la que aprendo constantemente",
+        
+        "title-1": "Midudev",
+        "txt-1": "Experto en desarrollo web que enseña programación de forma práctica y accesible.",
+
+        "title-2": "Gentleman Programming",
+        "txt-2": "Creador de contenido que enseña desarrollo web con un enfoque elegante, detallado y centrado en buenas prácticas.",
+
+        "title-3": "Soy Dalto",
+        "txt-3": "Educador en programación que enseña conceptos complejos de forma simple y entretenida, ideal para aprender desde cero."
     }
 }

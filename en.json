@@ -29,19 +29,41 @@
         "button-code": "View Code<img src='media//github.png' alt=''>",
         "button-link": "View Website<img src='media//url.png' alt=''>"
     },
-        "skills": {
+    "skills": {
         "title": "SKILLS",
         "subtitle-1": "Languages and Tech",
         "subtitle-2": "CMS",
         "subtitle-3": "Ongoing Learnings"
     },
-        "about-me": {
+    "about-me": {
         "title": "ABOUT ME",
         "subtitle": "My name is <strong>Dylan Mazur Zgainer</strong>, and I am from Argentina, where I currently live. I am in the second year of my <strong>Bachelor's Degree in Computer Science</strong> at Universidad Siglo 21. <br><br> Three years ago, I discovered the fascinating world of programming, and over the past year, I have been fully committed to constant learning. <br><br> Currently, my main goal is to <strong>continue growing professionally</strong>, expanding my knowledge and skills, and thus be able to afford my studies."
     },
-        "contact": {
+    "contact": {
             "title": "CONTACT",
             "txt-1": "Name",
             "txt-2": "Message"
+    },
+    "tools": {
+        "txt-1": "Icon Collection for Interfaces",
+        "txt-2": "CSS Code Generator",
+        "txt-3": "Fabulous Shadows for Your Page",
+        "txt-4": "Glassmorphism Card Generator",
+        "txt-5": "SVG Image Creator to Divide Your Page with Shapes",
+        "txt-6": "Library with Background Patterns for CSS",
+        "txt-7": "A Guide to UX Design Principles"
+    },
+    "dibul": {
+        "title": "Development Mentors",
+        "txt": "Here is a small section about the people I constantly learn from",
+
+        "title-1": "Midudev",
+        "txt-1": "An expert in web development who teaches programming in a practical and accessible way.",
+
+        "title-2": "Gentleman Programming",
+        "txt-2": "Content creator who teaches web development with an elegant, detailed approach focused on best practices.",
+
+        "title-3": "Soy Dalto",
+        "txt-3": "A programming educator who explains complex concepts in a simple and entertaining way, ideal for learning from scratch."
     }
 }
