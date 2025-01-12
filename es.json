@@ -34,5 +34,14 @@
         "subtitle-1": "Lenguajes y Tecnologías",
         "subtitle-2": "CMS",
         "subtitle-3": "Aprendizajes en curso"
+    },
+    "about-me": {
+        "title": "SOBRE MÍ",
+        "subtitle": "Mi nombre es <strong>Dylan Mazur Zgainer</strong> y soy oriundo de Argentina, donde actualmente resido. Estoy cursando el segundo año de la <strong>Licenciatura en Informática</strong> en la Universidad Siglo 21. <br><br> Hace tres años descubrí el fascinante mundo de la programación, y durante el último año me he enfocado en un aprendizaje pleno y constante. <br><br> Actualmente, mi principal objetivo es <strong>seguir creciendo profesionalmente</strong>, ampliar mis conocimientos y habilidades, y así poder costear mis estudios.  "
+    },
+    "contact": {
+        "title": "CONTACTO",
+        "txt-1": "Nombre",
+        "txt-2": "Mensaje"
     }
 }

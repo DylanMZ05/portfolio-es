@@ -34,5 +34,14 @@
         "subtitle-1": "Languages and Tech",
         "subtitle-2": "CMS",
         "subtitle-3": "Ongoing Learnings"
+    },
+        "about-me": {
+        "title": "ABOUT ME",
+        "subtitle": "My name is <strong>Dylan Mazur Zgainer</strong>, and I am from Argentina, where I currently live. I am in the second year of my <strong>Bachelor's Degree in Computer Science</strong> at Universidad Siglo 21. <br><br> Three years ago, I discovered the fascinating world of programming, and over the past year, I have been fully committed to constant learning. <br><br> Currently, my main goal is to <strong>continue growing professionally</strong>, expanding my knowledge and skills, and thus be able to afford my studies."
+    },
+        "contact": {
+            "title": "CONTACT",
+            "txt-1": "Name",
+            "txt-2": "Message"
     }
 }

@@ -255,13 +255,13 @@
 
     <section id="about" class="about-section">
         <div class="about-title">
-            <h3>SOBRE MI</h3>
+            <h3 data-section="about-me" data-value="title">SOBRE MI</h3>
             <hr class="about-hr">
         </div>
 
         <div class="about-container">
             <img src="media//DYLAN-2.jpeg" alt="">
-            <p>
+            <p data-section="about-me" data-value="subtitle">
                 Mi nombre es <strong>Dylan Mazur Zgainer</strong> y soy oriundo de Argentina, donde actualmente resido.  
                 Estoy cursando el segundo año de la <strong>Licenciatura en Informática</strong> en la Universidad Siglo 21.  
                 <br><br>
@@ -273,15 +273,15 @@
 
         <div id="contact" class="contact">
 
-            <h4>CONTACTO</h4>
+            <h4 data-section="contact" data-value="title">CONTACTO</h4>
 
             <form id="form">
                 <div class="field">
-                    <label for="from_name">Nombre</label>
+                    <label for="from_name" data-section="contact" data-value="txt-1">Nombre</label>
                     <input type="text" name="from_name" id="from_name">
                 </div>
                 <div class="field">
-                    <label for="message">Mensaje</label>
+                    <label for="message" data-section="contact" data-value="txt-2">Mensaje</label>
                     <input type="text" name="message" id="message">
                 </div>
 
